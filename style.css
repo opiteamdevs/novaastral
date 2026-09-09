@@ -1,4 +1,49 @@
+/* Configuração geral e centralização da página */
 body {
   background-color: #374a51ff;
   color: #8ba4aeff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* O cartão central (container) */
+.container {
+  background-color: rgba(0, 0, 0, 0.15); /* Um fundo sutil para destacar */
+  padding: 40px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  width: 90%;
+}
+
+/* Estilo do Título principal */
+.container h1 {
+  color: #ffffff; /* Deixei o título bem branquinho para dar contraste */
+  margin-bottom: 15px;
+  font-size: 2rem;
+}
+
+/* Estilo do parágrafo */
+.container p {
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+/* Estilo dos links (Flind e O Arthur) */
+.container a {
+  color: #a8d5e5; /* Um tom mais clarinho para o link se destacar */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.2s ease;
+}
+
+/* Efeito quando passa o mouse por cima do link */
+.container a:hover {
+  color: #ffffff;
+  text-decoration: underline;
 }
